@@ -53,6 +53,7 @@
         android:id="@+id/button_confirm"
         style="@style/LoginButton"
         android:layout_marginTop="40dp"
+        android:layout_marginBottom="@dimen/lay_20"
         android:text="@string/user_action_confirm"
         android:layout_below="@+id/layout_password"
         android:layout_centerHorizontal="true"/>

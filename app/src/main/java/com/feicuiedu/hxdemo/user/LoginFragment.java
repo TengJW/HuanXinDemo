@@ -31,7 +31,6 @@ public class LoginFragment extends DialogFragment {
     @BindView(R.id.button_confirm) Button btnConfirm;
     @BindView(R.id.progress_bar)ProgressBar mProgressBar;
 
-    // 用来create视图
     @Nullable @Override public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // 设置一下对话框是无标题模式
         getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);

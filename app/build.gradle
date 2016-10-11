@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.feicuiedu.hxdemo"
         minSdkVersion 19
-        targetSdkVersion 24
+        targetSdkVersion 22// 注意，如果设置成23，需要处理运行时权限
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
