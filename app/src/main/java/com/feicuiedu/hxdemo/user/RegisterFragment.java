@@ -3,6 +3,7 @@ package com.feicuiedu.hxdemo.user;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,10 +23,10 @@ import butterknife.OnClick;
 import butterknife.Unbinder;
 
 /**
+ * 注册页面
  * 作者：yuanchao on 2016/10/11 0011 14:21
  * 邮箱：yuanchao@feicuiedu.com
  */
-
 public class RegisterFragment extends DialogFragment {
 
     private Unbinder mUnbinder;
@@ -61,6 +62,12 @@ public class RegisterFragment extends DialogFragment {
     private void handleRegiter(final String username, final String password) {
         // 开始loading视图
         startLoading();
+        if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
+            stopLoading();
+            String info = getString(R.string.user_error_not_null);
+            showRegisterFail(info);
+            return;
+        }
         // 执行注册连接
         new Thread(new Runnable() {
             @Override public void run() {
