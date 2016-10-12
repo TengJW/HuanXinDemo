@@ -1,8 +1,10 @@
 package com.feicuiedu.apphx.contact;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.feicuiedu.apphx.chat.HxChatActivity;
 import com.hyphenate.EMContactListener;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMContactManager;
@@ -22,6 +24,16 @@ import java.util.List;
 public class HxContactListFragment extends EaseContactListFragment implements EMContactListener {
     private EMContactManager mEMContactManager; // 联系人管理APi
     private List<String> contacts; // 联系人集合(从环信服务器获取到的)
+
+    @Override public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //
+        setContactListItemClickListener(new EaseContactListItemClickListener() {
+            @Override public void onListItemClicked(EaseUser user) {
+                HxChatActivity.open(getContext(),user.getUsername());
+            }
+        });
+    }
 
     // EaseChatFragment 聊天
     // EaseConversationListFragment 会话

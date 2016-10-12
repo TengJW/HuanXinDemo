@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.feicuiedu.apphx.contact.HxContactListFragment;
 import com.feicuiedu.apphx.conversation.HxConversationListFragment;
+import com.feicuiedu.hxdemo.books.BooksFragment;
+import com.feicuiedu.hxdemo.user.UserFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -41,13 +43,13 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
         @Override public Fragment getItem(int position) {
             switch (position){
                 case 0:
-                    return new HxContactListFragment();
+                    return new BooksFragment();
                 case 1:
                     return new HxContactListFragment();
                 case 2:
                     return new HxConversationListFragment();
                 case 3:
-                    return new HxContactListFragment();
+                    return new UserFragment();
                 default:
                     throw new RuntimeException();
             }
