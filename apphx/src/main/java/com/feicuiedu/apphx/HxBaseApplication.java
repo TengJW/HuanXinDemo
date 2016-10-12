@@ -13,11 +13,6 @@ import com.hyphenate.easeui.controller.EaseUI;
  */
 public class HxBaseApplication extends Application {
 
-    // 用git管理当前项目，上传到github
-
-    // 1. 去gitbub上新建一个..
-    // 2. git管理自己的项目, 远程连接到github, 再push上去
-
     @Override public void onCreate() {
         super.onCreate();
         // 初始化环信sdk和easeui库
@@ -27,6 +22,7 @@ public class HxBaseApplication extends Application {
     private void initEaseUI() {
         EMOptions options = new EMOptions();
         options.setAutoLogin(false); // 关闭自动登录
+        options.setAcceptInvitationAlways(true); // 自动同意
         EaseUI.getInstance().init(this, options);
         // 关闭环信日志
         EMClient.getInstance().setDebugMode(false);

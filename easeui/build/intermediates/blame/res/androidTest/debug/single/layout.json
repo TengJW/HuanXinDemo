@@ -16,12 +16,12 @@
         "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_fragment_chat.xml"
     },
     {
-        "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_commom_back_btn.xml",
-        "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_commom_back_btn.xml"
-    },
-    {
         "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_widget_contact_list.xml",
         "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_widget_contact_list.xml"
+    },
+    {
+        "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_commom_back_btn.xml",
+        "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_commom_back_btn.xml"
     },
     {
         "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_chat_menu_item.xml",
@@ -76,12 +76,12 @@
         "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_activity_baidumap.xml"
     },
     {
-        "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_showvideo_activity.xml",
-        "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_showvideo_activity.xml"
-    },
-    {
         "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_file.xml",
         "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_row_received_file.xml"
+    },
+    {
+        "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_showvideo_activity.xml",
+        "source": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\bundles\\debug\\res\\layout\\ease_showvideo_activity.xml"
     },
     {
         "merged": "F:\\SVN\\project\\review\\ReadGroup\\HuanXinDemo\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ease_row_received_voice.xml",

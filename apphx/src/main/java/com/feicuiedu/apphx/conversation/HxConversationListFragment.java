@@ -38,7 +38,7 @@ public class HxConversationListFragment extends EaseConversationListFragment imp
 
     @Override public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //
+        // 设置会话listitem监听(在onActivityCreated之前调用才有效)
         setConversationListItemClickListener(new EaseConversationListItemClickListener() {
             @Override public void onListItemClicked(EMConversation conversation) {
                 HxChatActivity.open(getContext(),conversation.getUserName());
