@@ -23,28 +23,24 @@ public class HxContactListFragment extends EaseContactListFragment implements EM
     private EMContactManager mEMContactManager; // 联系人管理APi
     private List<String> contacts; // 联系人集合(从环信服务器获取到的)
 
+    // EaseChatFragment 聊天
+    // EaseConversationListFragment 会话
     @Override public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         // 自定制UI
-        customUI();
-        // 联系人监听(重要)
+        customUi();
+        // 联系人监听
         mEMContactManager = EMClient.getInstance().contactManager();
         mEMContactManager.setContactListener(this);
-        // 异步获取联系人数据
         asyncGetContactsFromServer();
-
-        // 获取一次联系人列表数据，且刷新一次当前List控件
-        // 1. EMClient---EMContactManager - getAll联系人(从环信)
-        // 1.1 拿到的将是一个 List<String>
-        // 1.2 当前EaseUI的EaseContactListFragment中，联系人EaseUser
-        //
-        // 2. 将联系人EaseUser设置加入到当前列表数据中EaseContactListFragment中的setContactsMap()
-        //
-        // 3. EaseContactListFragment中的refresh方法
-        // 最后，再结合上，联系人的监听,  一切搞定
     }
 
-    private void customUI() {
+    @Override public void onDestroy() {
+        super.onDestroy();
+        mEMContactManager.removeContactListener(this);
+    }
+
+    private void customUi() {
         super.hideTitleBar();
     }
 
